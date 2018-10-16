@@ -1,0 +1,32 @@
+#scanner-instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .badge {
+    border-radius: 1000px;
+    background-color: rgba(white, 0.9);
+    width: 40vw;
+    height: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%
+    }
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 300;
+    opacity: 0.8;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+}

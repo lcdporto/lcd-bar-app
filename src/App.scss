@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
