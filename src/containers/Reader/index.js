@@ -1,13 +1,17 @@
 import React, {Component} from 'react'
+import Modal from "react-modal";
 
 import './index.scss'
 import ScannerInstructions from "../../components/ScannerInstructions"
+import ProductPaymet from "../ProductPayment";
 
 class Reader extends Component {
 
     state = {
-        keys: []
-    }
+        keys: [],
+        isDisplayingProduct: false,
+        lastReadedProductId: null,
+    };
 
     componentDidMount() {
         window.addEventListener("keydown", this.handleKeyPress)
@@ -19,19 +23,37 @@ class Reader extends Component {
         } else {
             this.setState(old => ({keys: [...old.keys, e.key]}))
         }
-    }
+    };
 
     handleInputRead = () => {
-        console.warn('Barcode readed', this.state.keys.join(''))
-        this.setState({keys: []})
-    }
+
+        this.setState({
+            isDisplayingProduct: true,
+            keys: [],
+            lastReadedProductId: this.state.keys.join(''),
+        })
+    };
 
     render() {
         return (
             <div id='reader'>
                 <ScannerInstructions/>
+
+                {this.renderModal()}
             </div>
         );
+    }
+
+    renderModal() {
+        return (
+            <Modal
+                isOpen={this.state.isDisplayingProduct}
+                onRequestClose={() => this.setState({isDisplayingProduct: false})}
+                ariaHideApp={false}
+            >
+                <ProductPaymet productId={this.state.lastReadedProductId}/>
+            </Modal>
+        )
     }
 }
 
