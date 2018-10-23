@@ -13,3 +13,20 @@ body {
   flex-grow: 1;
   flex-direction: column;
 }
+
+.ReactModal__Content {
+  display: flex;
+  margin: auto;
+  max-width: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: auto;
+}
+
+.ReactModal__Content--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Content--before-close {
+  opacity: 0;
+}

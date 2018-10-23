@@ -1,0 +1,23 @@
+#product-payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .pinboard-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+    .pinboard {
+      flex-grow: 1;
+    }
+  }
+
+  .product-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+}

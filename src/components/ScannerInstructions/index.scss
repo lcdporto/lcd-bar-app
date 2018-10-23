@@ -7,8 +7,10 @@
   .badge {
     border-radius: 1000px;
     background-color: rgba(white, 0.9);
-    width: 40vw;
-    height: 40vw;
+    width: 50vw;
+    height: 50vw;
+    max-width: 50vh;
+    max-height: 50vh;
 
     display: flex;
     flex-direction: column;
@@ -21,7 +23,7 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 300;
     opacity: 0.8;
     text-align: center;
