@@ -1,14 +1,12 @@
-import React, {Component} from 'react'
-import 'muicss/dist/css/mui.min.css'
-import './App.scss'
-import Reader from "./containers/Reader"
+import React, { Component } from "react";
+import "muicss/dist/css/mui.min.css";
+import "./App.scss";
+import Reader from "./containers/Reader/Reader";
 
 class App extends Component {
-    render() {
-        return (
-            <Reader/>
-        )
-    }
+  render() {
+    return <Reader />;
+  }
 }
 
-export default App
+export default App;
