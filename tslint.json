@@ -13,31 +13,51 @@
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,
-    "comment-format": [true, "check-space"],
+    "comment-format": [
+      true,
+      "check-space"
+    ],
     "prettier": true,
-    "curly": true,
+    "curly": false,
     "eofline": true,
     "forin": true,
-    "import-blacklist": [true, "rxjs/Rx"],
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
     "import-name": false,
     "import-spacing": true,
-    "indent": [true, "spaces"],
-    "interface-name": [true, "always-prefix"],
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "interface-name": [
+      true,
+      "always-prefix"
+    ],
     "interface-over-type-literal": true,
     "jsx-no-multiline-js": false,
     "label-position": true,
-    "max-line-length": [true, 140],
+    "max-line-length": [
+      true,
+      140
+    ],
     "member-access": false,
     "no-arg": true,
     "no-bitwise": true,
-    "no-console": [false],
+    "no-console": [
+      false
+    ],
     "no-construct": true,
     "no-debugger": true,
     "no-duplicate-super": true,
     "no-empty": false,
     "no-empty-interface": true,
     "no-eval": true,
-    "no-inferrable-types": [true, "ignore-params"],
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
     "no-misused-new": true,
     "no-non-null-assertion": true,
     "no-shadowed-variable": true,
@@ -48,7 +68,10 @@
     "no-unnecessary-initializer": true,
     "no-unused-expression": true,
     "no-var-keyword": true,
-    "object-literal-sort-keys": [true, "shorthand-first"],
+    "object-literal-sort-keys": [
+      true,
+      "shorthand-first"
+    ],
     "ordered-imports": [
       true,
       {
@@ -65,9 +88,15 @@
     ],
     "prefer-const": true,
     "prefer-array-literal": false,
-    "quotemark": [true, "jsx-double"],
+    "quotemark": [
+      true,
+      "jsx-double"
+    ],
     "radix": true,
-    "triple-equals": [true, "allow-null-check"],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
     "typedef-whitespace": [
       true,
       {
@@ -79,7 +108,10 @@
       }
     ],
     "unified-signatures": true,
-    "variable-name": [true, "allow-pascal-case"]
+    "variable-name": [
+      true,
+      "allow-pascal-case"
+    ]
   },
   "rulesDirectory": []
 }
