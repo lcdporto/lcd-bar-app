@@ -1,0 +1,7 @@
+query productDetails($id: Int) {
+  product(id: $id) {
+    id
+    name
+    price
+  }
+}

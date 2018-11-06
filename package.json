@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "tslint": "tslint -c tslint.json 'src/**/*.{js,jsx,ts,tsx}'",
-    "format": "pretty-quick staged"
+    "format": "pretty-quick staged",
+    "schema-gen": "CODEGEN_NO_NAMESPACES=true gql-gen --schema https://api.bar.audienciazero.net/graphql --template graphql-codegen-typescript-react-apollo-template --out ./src/queries/index.tsx './src/**/*.graphql'"
   },
   "husky": {
     "hooks": {
@@ -43,6 +44,8 @@
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "@types/react-modal": "^3.2.1",
+    "graphql-code-generator": "^0.13.0",
+    "graphql-codegen-typescript-react-apollo-template": "^0.13.0",
     "husky": "^1.1.3",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.8.0",
