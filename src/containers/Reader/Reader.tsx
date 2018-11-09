@@ -9,14 +9,14 @@ import "./Reader.scss";
 interface IState {
   keys: string[];
   isDisplayingProduct: boolean;
-  lastReadedProductId: string;
+  lastReadedProductId: number;
 }
 
-class Reader extends Component<null, IState> {
+class Reader extends Component<{}, IState> {
   state = {
     isDisplayingProduct: false,
     keys: [],
-    lastReadedProductId: ""
+    lastReadedProductId: 0
   };
 
   componentDidMount() {
@@ -35,7 +35,7 @@ class Reader extends Component<null, IState> {
     this.setState({
       isDisplayingProduct: true,
       keys: [],
-      lastReadedProductId: this.state.keys.join("")
+      lastReadedProductId: Number(this.state.keys.join(""))
     });
   };
 
